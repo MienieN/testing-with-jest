@@ -1,0 +1,23 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "jest and npm practice",
+  "homepage": "https://github.com/MienieN/testing-with-jest#readme",
+  "bugs": {
+    "url": "https://github.com/MienieN/testing-with-jest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MienieN/testing-with-jest.git"
+  },
+  "license": "MIT",
+  "author": "Natalie Mienie",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  }
+}
