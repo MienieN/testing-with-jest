@@ -12,8 +12,8 @@
   },
   "license": "MIT",
   "author": "Natalie Mienie",
-  "type": "commonjs",
   "main": "src/index.js",
+  "mode": "production",
   "directories": {
     "test": "tests"
   },
