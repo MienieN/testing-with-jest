@@ -35,8 +35,9 @@ describe('Clicking "Pusha till stacken"', () => {
     });
 });
 
+// add end-to-end test here
 describe('Clicking "Poppa till stacken"', () =>{
-    it('should remove the top element of the stack and open an alert', 
+    it('should open an alert to show the element that has been popped', 
     async () => {
         // push an item first
         let push = await driver.findElement(By.id('push'));
