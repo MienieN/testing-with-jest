@@ -20,6 +20,9 @@ test('peek on stack with two or more elements returns the top element', () => {
 
 // add unti test here:
 test('pop on empty stack returns undefined', () => {
-    stack.pop();                            // this builds off of the previous tests and will return "wow"
-    expect(stack.pop()).toBeUndefined();    // this fails the test because it returns "wow" rather than "undefined"
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    expect(stack.pop()).toBeDefined(); //incorrect test
 });
