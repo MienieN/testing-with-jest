@@ -52,7 +52,7 @@ describe('Clicking "Poppa till stacken"', () =>{
         let popAlert = await driver.switchTo().alert();
         let alertText = await popAlert.getText();
         
-        expect(alertText).toEqual("Tog bort Undefined"); // incorrect answer
+        expect(alertText).toEqual("Tog bort Bananer");
 
         await popAlert.accept();
     });
