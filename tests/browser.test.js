@@ -34,3 +34,26 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+describe('Clicking "Poppa till stacken"', () =>{
+    it('should remove the top element of the stack and open an alert', 
+    async () => {
+        // push an item first
+        let push = await driver.findElement(By.id('push'));
+        await push.click();
+        let alert = await driver.switchTo().alert();
+        await alert.sendKeys("Bananer");
+        await alert.accept();
+
+        // click pop
+        let pop = await driver.findElement(By.id('pop'));
+        await pop.click();
+
+        let popAlert = await driver.switchTo().alert();
+        let alertText = await popAlert.getText();
+        
+        expect(alertText).toEqual("Tog bort Undefined"); // incorrect answer
+
+        await popAlert.accept();
+    });
+});
